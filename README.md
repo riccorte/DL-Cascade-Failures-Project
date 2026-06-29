@@ -1,4 +1,4 @@
-# CascadeGPS — didactical Deep Learning notebooks
+# CascadeGPS didactical Deep Learning notebooks
 
 This folder is a self-contained teaching version of the supervised Deep Learning part of CascadeGPS/CIRCLES. It is intentionally written with dense PyTorch tensors rather than PyTorch Geometric, so batching, masking, message passing, attention, losses, backpropagation, validation, checkpointing, and evaluation remain visible.
 
