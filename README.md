@@ -33,6 +33,3 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-## Relation to the larger project
-
-This notebook folder is the transparent prototype. The larger `cascadegps_project` repository is the modularized continuation: simulator, models, training, and evaluation are moved into reusable Python packages and command-line scripts.
