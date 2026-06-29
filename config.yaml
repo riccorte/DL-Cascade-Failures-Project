@@ -1,0 +1,87 @@
+seed: 7
+
+data:
+  # A unique directory prevents the main dataset from overwriting the smoke data.
+  output_dir: data/experiment_v1_seed7
+
+  # With 900 graphs, every family/regime combination should receive
+  # a reasonable number of independent graph instances.
+  num_graphs: 900
+
+  # Graphs, rather than individual transitions, are assigned to the splits.
+  split:
+    - 0.70
+    - 0.15
+    - 0.15
+
+  # Store several consecutive states from each cascade.
+  # More graphs remain more important than many transitions from one graph.
+  transitions_per_graph: 4
+
+  # Keep this fixed while the MLP is part of the comparison.
+  # The current MLP cannot process padded graphs with different sizes.
+  num_nodes: 40
+
+  graph_families:
+    - er
+    - ba
+    - ws
+
+  regimes:
+    - local
+    - long_range
+
+  max_steps: 8
+  collapse_threshold: 0.90
+
+  shock:
+    type: mixed
+    min_k: 1
+    max_k: 3
+
+  load_range:
+    - 0.60
+    - 1.00
+
+  tolerance_range:
+    - 0.15
+    - 0.45
+
+  protection_alpha: 1.50
+  redistribution_fraction: 1.00
+
+  long_range:
+    num_groups: 4
+    strength: 0.30
+
+  lap_pe_dim: 8
+  max_distance: 8
+
+model:
+  hidden_dim: 96
+  num_gnn_layers: 3
+  dropout: 0.15
+
+  transformer_layers: 2
+  transformer_heads: 4
+  ff_dim: 192
+
+training:
+  batch_size: 16
+
+  # This is a maximum. Early stopping should normally stop training earlier.
+  epochs: 100
+  patience: 15
+
+  learning_rate: 0.001
+  weight_decay: 0.0001
+
+  node_loss_weight: 1.0
+  graph_loss_weight: 0.5
+  load_loss_weight: 0.15
+
+  gradient_clip: 2.0
+
+  # Appropriate when node failures are imbalanced.
+  monitor: pr_auc
+

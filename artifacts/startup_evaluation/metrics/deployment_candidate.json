@@ -1,0 +1,19 @@
+{
+  "model": "hybrid",
+  "selection_rule": "lowest validation cost per active node",
+  "false_negative_cost": 5.0,
+  "false_positive_cost": 1.0,
+  "cost_threshold": 0.16,
+  "f1_threshold": 0.5700000000000001,
+  "test_metrics": {
+    "pr_auc": 0.9714247726206625,
+    "cost_precision": 0.8017200191113235,
+    "cost_recall": 0.9699421965317919,
+    "cost_f1": 0.8778446246403349,
+    "cost_alert_rate": 0.31450037565740047,
+    "cost_per_active_node": 0.10142749812171299,
+    "brier_calibrated": 0.036054178149906004,
+    "ece_calibrated": 0.005658644187808829,
+    "graph_mae": 0.07207571218267737
+  }
+}

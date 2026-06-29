@@ -1,0 +1,190 @@
+{
+  "load_ratio": {
+    "model": "load_ratio",
+    "cost_threshold": 0.38,
+    "pr_auc": 0.47866246890104647,
+    "cost_precision": 0.3203782724022604,
+    "cost_recall": 0.8028901734104046,
+    "cost_f1": 0.45800016486687,
+    "cost_alerts": 8671,
+    "cost_alert_rate": 0.6514650638617581,
+    "cost_per_active_node": 0.6989481592787378,
+    "false_positive": 5893,
+    "false_negative": 682,
+    "budget_metrics": [
+      {
+        "budget_fraction": 0.01,
+        "selected_nodes": 433,
+        "captured_failures": 210,
+        "precision_at_budget": 0.48498845265588914,
+        "recall_at_budget": 0.06069364161849711,
+        "lift_at_budget": 1.865663671921932
+      },
+      {
+        "budget_fraction": 0.05,
+        "selected_nodes": 804,
+        "captured_failures": 367,
+        "precision_at_budget": 0.4564676616915423,
+        "recall_at_budget": 0.10606936416184971,
+        "lift_at_budget": 1.7559492997440542
+      },
+      {
+        "budget_fraction": 0.1,
+        "selected_nodes": 1501,
+        "captured_failures": 610,
+        "precision_at_budget": 0.40639573617588276,
+        "recall_at_budget": 0.17630057803468208,
+        "lift_at_budget": 1.5633315747112715
+      },
+      {
+        "budget_fraction": 0.2,
+        "selected_nodes": 2843,
+        "captured_failures": 1035,
+        "precision_at_budget": 0.36405205768554344,
+        "recall_at_budget": 0.2991329479768786,
+        "lift_at_budget": 1.4004430311545037
+      }
+    ]
+  },
+  "failed_neighbor": {
+    "model": "failed_neighbor",
+    "cost_threshold": 0.08,
+    "pr_auc": 0.722546440195628,
+    "cost_precision": 0.5727462582666203,
+    "cost_recall": 0.9511560693641619,
+    "cost_f1": 0.7149684988051271,
+    "cost_alerts": 5746,
+    "cost_alert_rate": 0.4317054845980466,
+    "cost_per_active_node": 0.24793388429752067,
+    "false_positive": 2455,
+    "false_negative": 169,
+    "budget_metrics": [
+      {
+        "budget_fraction": 0.01,
+        "selected_nodes": 433,
+        "captured_failures": 307,
+        "precision_at_budget": 0.7090069284064665,
+        "recall_at_budget": 0.08872832369942196,
+        "lift_at_budget": 2.727422606095396
+      },
+      {
+        "budget_fraction": 0.05,
+        "selected_nodes": 804,
+        "captured_failures": 536,
+        "precision_at_budget": 0.6666666666666666,
+        "recall_at_budget": 0.15491329479768787,
+        "lift_at_budget": 2.5645472061657033
+      },
+      {
+        "budget_fraction": 0.1,
+        "selected_nodes": 1501,
+        "captured_failures": 935,
+        "precision_at_budget": 0.6229180546302465,
+        "recall_at_budget": 0.2702312138728324,
+        "lift_at_budget": 2.3962541350082605
+      },
+      {
+        "budget_fraction": 0.2,
+        "selected_nodes": 2843,
+        "captured_failures": 1547,
+        "precision_at_budget": 0.544143510376363,
+        "recall_at_budget": 0.44710982658959536,
+        "lift_at_budget": 2.09322257893335
+      }
+    ]
+  },
+  "degree": {
+    "model": "degree",
+    "cost_threshold": 0.12,
+    "pr_auc": 0.2892621985694316,
+    "cost_precision": 0.2608427702026038,
+    "cost_recall": 0.9786127167630058,
+    "cost_f1": 0.4118970865519129,
+    "cost_alerts": 12981,
+    "cost_alert_rate": 0.9752817430503381,
+    "cost_per_active_node": 0.7486851990984222,
+    "false_positive": 9595,
+    "false_negative": 74,
+    "budget_metrics": [
+      {
+        "budget_fraction": 0.01,
+        "selected_nodes": 433,
+        "captured_failures": 221,
+        "precision_at_budget": 0.5103926096997691,
+        "recall_at_budget": 0.06387283236994219,
+        "lift_at_budget": 1.9633889118797476
+      },
+      {
+        "budget_fraction": 0.05,
+        "selected_nodes": 804,
+        "captured_failures": 369,
+        "precision_at_budget": 0.458955223880597,
+        "recall_at_budget": 0.10664739884393064,
+        "lift_at_budget": 1.7655185057372098
+      },
+      {
+        "budget_fraction": 0.1,
+        "selected_nodes": 1501,
+        "captured_failures": 618,
+        "precision_at_budget": 0.4117255163224517,
+        "recall_at_budget": 0.17861271676300577,
+        "lift_at_budget": 1.5838342838878128
+      },
+      {
+        "budget_fraction": 0.2,
+        "selected_nodes": 2843,
+        "captured_failures": 1054,
+        "precision_at_budget": 0.37073513893774185,
+        "recall_at_budget": 0.3046242774566474,
+        "lift_at_budget": 1.4261516471853595
+      }
+    ]
+  },
+  "empirical_rate": {
+    "model": "empirical_rate",
+    "cost_threshold": 0.01,
+    "pr_auc": 0.2599549211119459,
+    "cost_precision": 0.2599549211119459,
+    "cost_recall": 1.0,
+    "cost_f1": 0.41264162194394755,
+    "cost_alerts": 13310,
+    "cost_alert_rate": 1.0,
+    "cost_per_active_node": 0.740045078888054,
+    "false_positive": 9850,
+    "false_negative": 0,
+    "budget_metrics": [
+      {
+        "budget_fraction": 0.01,
+        "selected_nodes": 433,
+        "captured_failures": 153,
+        "precision_at_budget": 0.3533487297921478,
+        "recall_at_budget": 0.04421965317919075,
+        "lift_at_budget": 1.359269246685979
+      },
+      {
+        "budget_fraction": 0.05,
+        "selected_nodes": 804,
+        "captured_failures": 235,
+        "precision_at_budget": 0.2922885572139303,
+        "recall_at_budget": 0.06791907514450866,
+        "lift_at_budget": 1.124381704195784
+      },
+      {
+        "budget_fraction": 0.1,
+        "selected_nodes": 1501,
+        "captured_failures": 382,
+        "precision_at_budget": 0.25449700199866754,
+        "recall_at_budget": 0.11040462427745665,
+        "lift_at_budget": 0.9790043631798454
+      },
+      {
+        "budget_fraction": 0.2,
+        "selected_nodes": 2843,
+        "captured_failures": 701,
+        "precision_at_budget": 0.2465705240942666,
+        "recall_at_budget": 0.20260115606936416,
+        "lift_at_budget": 0.948512623033147
+      }
+    ]
+  }
+}

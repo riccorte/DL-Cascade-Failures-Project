@@ -1,0 +1,54 @@
+seed: 7
+data:
+  output_dir: data/smoke
+  num_graphs: 60
+  split:
+  - 0.7
+  - 0.15
+  - 0.15
+  transitions_per_graph: 2
+  num_nodes: 20
+  graph_families:
+  - er
+  - ba
+  - ws
+  regimes:
+  - local
+  - long_range
+  max_steps: 6
+  collapse_threshold: 0.85
+  shock:
+    type: mixed
+    min_k: 1
+    max_k: 2
+  load_range:
+  - 0.65
+  - 1.0
+  tolerance_range:
+  - 0.1
+  - 0.3
+  protection_alpha: 1.5
+  redistribution_fraction: 1.0
+  long_range:
+    num_groups: 3
+    strength: 0.2
+  lap_pe_dim: 4
+  max_distance: 6
+model:
+  hidden_dim: 32
+  num_gnn_layers: 2
+  dropout: 0.1
+  transformer_layers: 1
+  transformer_heads: 4
+  ff_dim: 64
+training:
+  batch_size: 8
+  epochs: 20
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 3
+  node_loss_weight: 1.0
+  graph_loss_weight: 0.5
+  load_loss_weight: 0.1
+  gradient_clip: 2.0
+  monitor: pr_auc

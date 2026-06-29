@@ -1,0 +1,143 @@
+{
+  "model": "hybrid",
+  "false_negative_cost": 5.0,
+  "false_positive_cost": 1.0,
+  "f1_threshold": 0.5700000000000001,
+  "cost_threshold": 0.16,
+  "pr_auc": 0.9714247726206625,
+  "roc_auc": 0.9888783486400048,
+  "cost_precision": 0.8017200191113235,
+  "cost_recall": 0.9699421965317919,
+  "cost_f1": 0.8778446246403349,
+  "cost_alerts": 4186,
+  "cost_alert_rate": 0.31450037565740047,
+  "cost_per_active_node": 0.10142749812171299,
+  "false_positive": 830,
+  "false_negative": 104,
+  "f1_precision": 0.9277708592777086,
+  "f1_recall": 0.861271676300578,
+  "f1_score": 0.8932853717026379,
+  "brier_raw": 0.03874738617469742,
+  "brier_calibrated": 0.036054178149906004,
+  "ece_raw": 0.026069860075808294,
+  "ece_calibrated": 0.005658644187808829,
+  "graph_mae": 0.07207571218267737,
+  "graph_rmse": 0.17686745203020932,
+  "load_mae": 0.12541450048876415,
+  "load_rmse": 0.2563654479531956,
+  "by_family": {
+    "ws": {
+      "independent_graphs": 45,
+      "active_nodes": 4375,
+      "new_failures": 1143,
+      "prevalence": 0.26125714285714285,
+      "precision": 0.8171091445427728,
+      "recall": 0.9693788276465442,
+      "f1": 0.8867547018807523,
+      "pr_auc": 0.9740283382153342,
+      "cost_per_active_node": 0.09668571428571429
+    },
+    "er": {
+      "independent_graphs": 44,
+      "active_nodes": 4421,
+      "new_failures": 1181,
+      "prevalence": 0.267134132549197,
+      "precision": 0.8425312729948492,
+      "recall": 0.9695173581710415,
+      "f1": 0.9015748031496063,
+      "pr_auc": 0.980238622881475,
+      "cost_per_active_node": 0.08912010857272111
+    },
+    "ba": {
+      "independent_graphs": 46,
+      "active_nodes": 4514,
+      "new_failures": 1136,
+      "prevalence": 0.2516614975631369,
+      "precision": 0.7498300475866757,
+      "recall": 0.9709507042253521,
+      "f1": 0.8461833525124665,
+      "pr_auc": 0.9590049807696186,
+      "cost_per_active_node": 0.11807709348692955
+    }
+  },
+  "by_regime": {
+    "long_range": {
+      "independent_graphs": 67,
+      "active_nodes": 6472,
+      "new_failures": 1875,
+      "prevalence": 0.2897095179233622,
+      "precision": 0.8021631365479945,
+      "recall": 0.9493333333333334,
+      "f1": 0.8695652173913043,
+      "pr_auc": 0.9650207699449278,
+      "cost_per_active_node": 0.14122373300370827
+    },
+    "local": {
+      "independent_graphs": 68,
+      "active_nodes": 6838,
+      "new_failures": 1585,
+      "prevalence": 0.23179292190699036,
+      "precision": 0.8012201321809863,
+      "recall": 0.9943217665615142,
+      "f1": 0.8873873873873874,
+      "pr_auc": 0.9803859094171045,
+      "cost_per_active_node": 0.06376133372331091
+    }
+  },
+  "bootstrap_95_ci": {
+    "pr_auc": {
+      "lower": 0.9660992037633189,
+      "upper": 0.9758932990469614
+    },
+    "recall": {
+      "lower": 0.9623116071559124,
+      "upper": 0.9764579413097564
+    },
+    "cost_per_active_node": {
+      "lower": 0.08917748829723306,
+      "upper": 0.11470886970092833
+    },
+    "recall_at_10_percent": {
+      "lower": 0.3221823908168759,
+      "upper": 0.3543752714452999
+    },
+    "graph_mae": {
+      "lower": 0.05497017394454541,
+      "upper": 0.09187173158027713
+    }
+  },
+  "budget_metrics": [
+    {
+      "budget_fraction": 0.01,
+      "selected_nodes": 433,
+      "captured_failures": 390,
+      "precision_at_budget": 0.9006928406466512,
+      "recall_at_budget": 0.11271676300578035,
+      "lift_at_budget": 3.4648039621407305
+    },
+    {
+      "budget_fraction": 0.05,
+      "selected_nodes": 804,
+      "captured_failures": 691,
+      "precision_at_budget": 0.8594527363184079,
+      "recall_at_budget": 0.19971098265895953,
+      "lift_at_budget": 3.3061606706352626
+    },
+    {
+      "budget_fraction": 0.1,
+      "selected_nodes": 1501,
+      "captured_failures": 1165,
+      "precision_at_budget": 0.776149233844104,
+      "recall_at_budget": 0.33670520231213874,
+      "lift_at_budget": 2.9857070238338217
+    },
+    {
+      "budget_fraction": 0.2,
+      "selected_nodes": 2843,
+      "captured_failures": 1830,
+      "precision_at_budget": 0.6436862469222652,
+      "recall_at_budget": 0.5289017341040463,
+      "lift_at_budget": 2.4761456492876732
+    }
+  ]
+}
