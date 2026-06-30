@@ -1,7 +1,7 @@
 family,regime,transition_samples,independent_graphs
 ba,local,80,25
-ba,long_range,64,21
+ba,long_range,56,21
 er,local,84,24
-er,long_range,61,20
+er,long_range,56,20
 ws,local,60,19
-ws,long_range,84,26
+ws,long_range,77,26

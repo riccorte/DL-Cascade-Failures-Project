@@ -3,9 +3,9 @@
   "lap_pe_dim": 8,
   "max_nodes": 40,
   "split_sizes": {
-    "train": 2053,
-    "val": 439,
-    "test": 433
+    "train": 1912,
+    "val": 403,
+    "test": 413
   },
   "graph_ids": {
     "train": [
